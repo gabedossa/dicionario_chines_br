@@ -582,4 +582,172 @@ export const TEXTS: ReadingText[] = [
       { zh: '在人工智能可以模拟记忆、预测未来的今天，时间与记忆的意义正在被重新书写。', py: 'Zài réngōng zhìnéng kěyǐ mónǐ jìyì, yùcè wèilái de jīntiān, shíjiān yǔ jìyì de yìyì zhèngzài bèi chóngxīn shūxiě.', pt: 'Na era em que a inteligência artificial pode simular memórias e prever o futuro, o significado do tempo e da memória está sendo reescrito.' },
     ],
   },
+
+  // ── HSK 1 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk1-meu-dia',
+    title: 'Meu Dia',
+    titleZh: '我的一天',
+    level: 1,
+    lines: [
+      { zh: '早上七点我起床。', py: 'Zǎoshang qī diǎn wǒ qǐchuáng.', pt: 'De manhã às sete horas eu me levanto.' },
+      { zh: '我洗脸、刷牙，然后吃早饭。', py: 'Wǒ xǐ liǎn, shuā yá, ránhòu chī zǎofàn.', pt: 'Lavo o rosto, escovo os dentes e depois tomo café da manhã.' },
+      { zh: '上午我去上学，下午回家。', py: 'Shàngwǔ wǒ qù shàngxué, xiàwǔ huí jiā.', pt: 'De manhã vou à escola; à tarde volto para casa.' },
+      { zh: '晚上我看电视、做作业。', py: 'Wǎnshang wǒ kàn diànshì, zuò zuòyè.', pt: 'À noite eu assisto TV e faço a lição de casa.' },
+      { zh: '十点我睡觉，好梦！', py: 'Shí diǎn wǒ shuìjiào, hǎo mèng!', pt: 'Às dez horas durmo. Bons sonhos!' },
+    ],
+  },
+  {
+    id: 'hsk1-numeros',
+    title: 'Os Números',
+    titleZh: '数字',
+    level: 1,
+    lines: [
+      { zh: '一到十，我都会数。', py: 'Yī dào shí, wǒ dōu huì shǔ.', pt: 'De um a dez, eu sei contar todos.' },
+      { zh: '我家有三口人：爸爸、妈妈和我。', py: 'Wǒ jiā yǒu sān kǒu rén: bàba, māma hé wǒ.', pt: 'Minha família tem três pessoas: papai, mamãe e eu.' },
+      { zh: '我有两本书，一支铅笔。', py: 'Wǒ yǒu liǎng běn shū, yī zhī qiānbǐ.', pt: 'Tenho dois livros e um lápis.' },
+      { zh: '今天是星期五，明天不上学。', py: 'Jīntiān shì xīngqīwǔ, míngtiān bù shàngxué.', pt: 'Hoje é sexta-feira; amanhã não há escola.' },
+      { zh: '我们班有二十个同学。', py: 'Wǒmen bān yǒu èrshí gè tóngxué.', pt: 'Nossa turma tem vinte colegas.' },
+    ],
+  },
+
+  // ── HSK 2 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk2-biblioteca',
+    title: 'Na Biblioteca',
+    titleZh: '在图书馆',
+    level: 2,
+    lines: [
+      { zh: '我很喜欢去图书馆看书。', py: 'Wǒ hěn xǐhuan qù túshūguǎn kàn shū.', pt: 'Gosto muito de ir à biblioteca ler.' },
+      { zh: '图书馆里很安静，有很多书和杂志。', py: 'Túshūguǎn lǐ hěn ānjìng, yǒu hěn duō shū hé zázhì.', pt: 'Na biblioteca é muito silencioso; tem muitos livros e revistas.' },
+      { zh: '我每个星期六都去那里学习两个小时。', py: 'Wǒ měi gè xīngqīliù dōu qù nàlǐ xuéxí liǎng gè xiǎoshí.', pt: 'Vou lá estudar duas horas todo sábado.' },
+      { zh: '图书馆的老师很热心，帮我找书。', py: 'Túshūguǎn de lǎoshī hěn rèxīn, bāng wǒ zhǎo shū.', pt: 'A bibliotecária é muito atenciosa e me ajuda a encontrar livros.' },
+      { zh: '我借了三本关于中国历史的书。', py: 'Wǒ jiè le sān běn guānyú Zhōngguó lìshǐ de shū.', pt: 'Peguei emprestados três livros sobre a história da China.' },
+    ],
+  },
+  {
+    id: 'hsk2-mercado-manha',
+    title: 'O Mercado de Manhã',
+    titleZh: '早市',
+    level: 2,
+    lines: [
+      { zh: '每天早上，奶奶去早市买菜。', py: 'Měitiān zǎoshang, nǎinai qù zǎoshì mǎi cài.', pt: 'Toda manhã, a vovó vai ao mercado comprar legumes.' },
+      { zh: '那里有很多新鲜的蔬菜和水果。', py: 'Nàlǐ yǒu hěn duō xīnxiān de shūcài hé shuǐguǒ.', pt: 'Lá tem muitos vegetais e frutas frescos.' },
+      { zh: '奶奶喜欢和卖菜的人说话，很热闹。', py: 'Nǎinai xǐhuan hé mài cài de rén shuōhuà, hěn rènào.', pt: 'A vovó gosta de conversar com os vendedores; é muito animado.' },
+      { zh: '今天买了西红柿、黄瓜和豆腐。', py: 'Jīntiān mǎi le xīhóngshì, huángguā hé dòufu.', pt: 'Hoje comprou tomates, pepinos e tofu.' },
+      { zh: '奶奶做的饭总是很好吃。', py: 'Nǎinai zuò de fàn zǒng shì hěn hǎochī.', pt: 'A comida que a vovó faz é sempre muito gostosa.' },
+    ],
+  },
+
+  // ── HSK 3 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk3-amizade',
+    title: 'A Amizade',
+    titleZh: '友谊',
+    level: 3,
+    lines: [
+      { zh: '我和李明认识三年了，他是我最好的朋友。', py: 'Wǒ hé Lǐ Míng rènshi sān nián le, tā shì wǒ zuì hǎo de péngyou.', pt: 'Já conheço Li Ming há três anos; ele é meu melhor amigo.' },
+      { zh: '我们每天一起上学，互相帮助学习。', py: 'Wǒmen měitiān yīqǐ shàngxué, hùxiāng bāngzhù xuéxí.', pt: 'Vamos à escola juntos todo dia e nos ajudamos mutuamente nos estudos.' },
+      { zh: '上个月他生病了，我去医院看他，还带了他爱吃的食物。', py: 'Shàng ge yuè tā shēngbìng le, wǒ qù yīyuàn kàn tā, hái dài le tā ài chī de shíwù.', pt: 'No mês passado ele ficou doente; fui ao hospital visitá-lo e levei comida que ele gosta.' },
+      { zh: '他说："有你这样的朋友，真幸运。"', py: 'Tā shuō: "Yǒu nǐ zhèyàng de péngyou, zhēn xìngyùn."', pt: 'Ele disse: "Ter um amigo como você é muita sorte."' },
+      { zh: '我觉得真正的友谊比任何东西都重要。', py: 'Wǒ juéde zhēnzhèng de yǒuyì bǐ rènhé dōngxi dōu zhòngyào.', pt: 'Acho que a verdadeira amizade é mais importante do que qualquer coisa.' },
+    ],
+  },
+  {
+    id: 'hsk3-quatro-estacoes',
+    title: 'As Quatro Estações',
+    titleZh: '四季',
+    level: 3,
+    lines: [
+      { zh: '中国的四季分明，每个季节都有不同的美丽。', py: 'Zhōngguó de sìjì fēnmíng, měi gè jìjié dōu yǒu bùtóng de měilì.', pt: 'As quatro estações da China são bem definidas; cada uma tem sua beleza particular.' },
+      { zh: '春天花开，夏天绿树成荫，很凉快。', py: 'Chūntiān huā kāi, xiàtiān lǜ shù chéng yīn, hěn liángkuai.', pt: 'Na primavera as flores desabrocham; no verão as árvores dão sombra, é muito fresco.' },
+      { zh: '秋天叶子变红变黄，景色非常漂亮。', py: 'Qiūtiān yèzi biàn hóng biàn huáng, jǐngsè fēicháng piàoliang.', pt: 'No outono as folhas ficam vermelhas e amarelas; a paisagem é muito bonita.' },
+      { zh: '冬天下雪，孩子们出去堆雪人，玩得很开心。', py: 'Dōngtiān xià xuě, háizimen chūqù duī xuěrén, wán de hěn kāixīn.', pt: 'No inverno neva; as crianças saem para fazer bonecos de neve e se divertem muito.' },
+      { zh: '我最喜欢秋天，因为天气不冷不热，正好。', py: 'Wǒ zuì xǐhuan qiūtiān, yīnwèi tiānqì bù lěng bú rè, zhènghǎo.', pt: 'Gosto mais do outono porque o tempo não é nem frio nem quente — é perfeito.' },
+    ],
+  },
+
+  // ── HSK 4 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk4-turismo',
+    title: 'Turismo na China',
+    titleZh: '中国旅游',
+    level: 4,
+    lines: [
+      { zh: '中国幅员辽阔，旅游资源极为丰富，每年吸引数以亿计的国内外游客。', py: 'Zhōngguó fúyuán liáokuò, lǚyóu zīyuán jí wéi fēngfù, měi nián xīyǐn shù yǐ yì jì de guónèi wài yóukè.', pt: 'A China é vasta e possui recursos turísticos extremamente ricos, atraindo centenas de milhões de turistas a cada ano.' },
+      { zh: '从北方的长城到南方的桂林山水，自然与人文景观令人叹为观止。', py: 'Cóng běifāng de Chángchéng dào nánfāng de Guìlín shānshuǐ, zìrán yǔ rénwén jǐngguān lìng rén tàn wéi guān zhǐ.', pt: 'Da Grande Muralha no norte às paisagens de Guilin no sul, os cenários naturais e culturais são de tirar o fôlego.' },
+      { zh: '近年来，中国的民宿、特色小镇等新型旅游业态迅速发展。', py: 'Jìn nián lái, Zhōngguó de mínsù, tèsè xiǎozhèn děng xīnxíng lǚyóu yètài xùnsù fāzhǎn.', pt: 'Nos últimos anos, novas formas de turismo como pousadas locais e pequenas cidades típicas têm se desenvolvido rapidamente.' },
+      { zh: '旅游业对于传播中国文化、促进地方经济发展起着重要作用。', py: 'Lǚyóuyè duìyú chuánbō Zhōngguó wénhuà, cùjìn dìfāng jīngjì fāzhǎn qǐ zhe zhòngyào zuòyòng.', pt: 'A indústria do turismo desempenha um papel importante na divulgação da cultura chinesa e no desenvolvimento econômico local.' },
+      { zh: '可持续旅游的理念逐渐深入人心，越来越多的游客注重保护旅游目的地的生态环境。', py: 'Kě chíxù lǚyóu de lǐniàn zhújiàn shēnrù rénxīn, yuè lái yuè duō de yóukè zhùzhòng bǎohù lǚyóu mùdìdì de shēngtài huánjìng.', pt: 'O conceito de turismo sustentável está ganhando espaço, com cada vez mais turistas preocupados em preservar o meio ambiente dos destinos.' },
+    ],
+  },
+  {
+    id: 'hsk4-voluntariado',
+    title: 'O Voluntariado',
+    titleZh: '志愿服务',
+    level: 4,
+    lines: [
+      { zh: '越来越多的年轻人开始参与志愿服务活动，贡献自己的力量。', py: 'Yuè lái yuè duō de niánqīng rén kāishǐ cānyù zhìyuàn fúwù huódòng, gòngxiàn zìjǐ de lìliàng.', pt: 'Cada vez mais jovens estão participando de atividades voluntárias, contribuindo com suas forças.' },
+      { zh: '志愿者们在医院、学校、社区等地方提供各种帮助。', py: 'Zhìyuànzhěmen zài yīyuàn, xuéxiào, shèqū děng dìfang tígōng gèzhǒng bāngzhù.', pt: 'Os voluntários prestam diversos tipos de ajuda em hospitais, escolas, comunidades e outros lugares.' },
+      { zh: '通过志愿服务，年轻人不仅帮助了他人，也丰富了自己的人生经历。', py: 'Tōngguò zhìyuàn fúwù, niánqīng rén bùjǐn bāngzhù le tārén, yě fēngfù le zìjǐ de rénshēng jīnglì.', pt: 'Através do voluntariado, os jovens não só ajudam os outros, mas também enriquecem suas próprias experiências de vida.' },
+      { zh: '很多大学把志愿服务记录列入学生综合评价体系。', py: 'Hěn duō dàxué bǎ zhìyuàn fúwù jìlù liè rù xuésheng zōnghé píngjià tǐxì.', pt: 'Muitas universidades incluem o registro de voluntariado no sistema de avaliação integral dos alunos.' },
+      { zh: '帮助他人的同时，我们也在建立一个更有爱心的社会。', py: 'Bāngzhù tārén de tóngshí, wǒmen yě zài jiànlì yī gè gèng yǒu àixīn de shèhuì.', pt: 'Ao ajudar os outros, também estamos construindo uma sociedade mais solidária.' },
+    ],
+  },
+
+  // ── HSK 5 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk5-inteligencia-artificial',
+    title: 'Inteligência Artificial',
+    titleZh: '人工智能',
+    level: 5,
+    lines: [
+      { zh: '人工智能技术的飞速发展正在深刻改变着各行各业的运作方式。', py: 'Réngōng zhìnéng jìshù de fēisù fāzhǎn zhèngzài shēnkè gǎibiàn zhe gè háng gè yè de yùnzuò fāngshì.', pt: 'O rápido desenvolvimento da tecnologia de inteligência artificial está transformando profundamente o modo de operação de todos os setores.' },
+      { zh: '从医疗诊断到自动驾驶，人工智能的应用场景日益广泛。', py: 'Cóng yīliáo zhěnduàn dào zìdòng jiàshǐ, réngōng zhìnéng de yìngyòng chǎngjǐng rìyì guǎngfàn.', pt: 'Do diagnóstico médico à condução autônoma, os cenários de aplicação da IA são cada vez mais abrangentes.' },
+      { zh: '大量重复性工作将被人工智能取代，由此引发的就业结构变化不容忽视。', py: 'Dàliàng zhòngfùxìng gōngzuò jiāng bèi réngōng zhìnéng qǔdài, yóucǐ yǐnfā de jiùyè jiégòu biànhuà bùróng hūshì.', pt: 'Uma grande quantidade de trabalhos repetitivos será substituída pela IA; as mudanças na estrutura do emprego daí resultantes não podem ser ignoradas.' },
+      { zh: '与此同时，人工智能也催生了大量新兴职业和发展机遇。', py: 'Yǔ cǐ tóngshí, réngōng zhìnéng yě cuīshēng le dàliàng xīnxīng zhíyè hé fāzhǎn jīyù.', pt: 'Ao mesmo tempo, a IA também gerou uma grande quantidade de novas profissões e oportunidades de desenvolvimento.' },
+      { zh: '如何在拥抱技术进步的同时，确保人工智能的发展符合人类的整体利益，是当代最重要的议题之一。', py: 'Rúhé zài yōngbào jìshù jìnbù de tóngshí, quèbǎo réngōng zhìnéng de fāzhǎn fúhé rénlèi de zhěngtǐ lìyì, shì dāngdài zuì zhòngyào de yìtí zhī yī.', pt: 'Como abraçar o progresso tecnológico garantindo que o desenvolvimento da IA sirva aos interesses gerais da humanidade é um dos temas mais importantes da atualidade.' },
+    ],
+  },
+  {
+    id: 'hsk5-transporte',
+    title: 'Redes de Transporte',
+    titleZh: '交通网络',
+    level: 5,
+    lines: [
+      { zh: '中国拥有世界上规模最大的高速铁路网络，将各大城市紧密相连。', py: 'Zhōngguó yōngyǒu shìjiè shàng guīmó zuìdà de gāosù tiělù wǎngluò, jiāng gè dà chéngshì jǐnmì xiāng lián.', pt: 'A China possui a maior rede de ferrovias de alta velocidade do mundo, conectando estreitamente as principais cidades.' },
+      { zh: '高铁的普及大大缩短了城市间的时空距离，有力促进了区域经济的一体化。', py: 'Gāotiě de pǔjí dàdà suōduǎn le chéngshì jiān de shíkōng jùlí, yǒulì cùjìn le qūyù jīngjì de yītǐhuà.', pt: 'A popularização do trem de alta velocidade encurtou enormemente as distâncias entre cidades e impulsionou fortemente a integração econômica regional.' },
+      { zh: '城市地铁网络的快速扩张也极大改善了市民的出行体验。', py: 'Chéngshì dìtiě wǎngluò de kuàisù kuòzhāng yě jídà gǎishàn le shìmín de chūxíng tǐyàn.', pt: 'A rápida expansão das redes de metrô urbano também melhorou enormemente a experiência de deslocamento dos cidadãos.' },
+      { zh: '新能源汽车的快速推广正在重塑中国城市的交通生态。', py: 'Xīn néngyuán qìchē de kuàisù tuīguǎng zhèngzài chóngsù Zhōngguó chéngshì de jiāotōng shēngtài.', pt: 'A rápida expansão dos veículos elétricos está remodelando o ecossistema de transporte das cidades chinesas.' },
+      { zh: '未来的智慧交通系统将通过大数据和人工智能实现更高效、更安全的出行管理。', py: 'Wèilái de zhìhuì jiāotōng xìtǒng jiāng tōngguò dà shùjù hé réngōng zhìnéng shíxiàn gèng gāoxiào, gèng ānquán de chūxíng guǎnlǐ.', pt: 'O futuro sistema de transporte inteligente usará big data e IA para uma gestão de mobilidade mais eficiente e segura.' },
+    ],
+  },
+
+  // ── HSK 6 (novos +2) ───────────────────────────────────────────────────
+  {
+    id: 'hsk6-ecologia-etica',
+    title: 'Crise Ecológica e Ética',
+    titleZh: '生态危机与伦理',
+    level: 6,
+    lines: [
+      { zh: '人类中心主义长期主导着人与自然的关系，将自然视为可供无限利用的资源库。', py: 'Rénlèi zhōngxīnzhǔyì chángqī zhǔdǎo zhe rén yǔ zìrán de guānxi, jiāng zìrán shì wéi kě gōng wúxiàn lìyòng de zīyuán kù.', pt: 'O antropocentrismo dominou por longo tempo a relação entre o ser humano e a natureza, tratando-a como um reservatório de recursos de exploração ilimitada.' },
+      { zh: '然而，生态系统的急剧退化与生物多样性的丧失，迫使人类重新审视自身在自然界中的位置。', py: "Rán'ér, shēngtài xìtǒng de jíjù tuìhuà yǔ shēngwù duōyàngxìng de sàngshī, pòshǐ rénlèi chóngxīn shěnshì zìshēn zài zìrán jiè zhōng de wèizhi.", pt: 'No entanto, a rápida degradação dos ecossistemas e a perda da biodiversidade forçam a humanidade a reexaminar seu lugar na natureza.' },
+      { zh: '非人类中心主义伦理学主张，自然界的每一个物种都有其内在价值，不应仅以对人类是否有用来衡量。', py: 'Fēi rénlèi zhōngxīnzhǔyì lúnlǐxué zhǔzhāng, zìrán jiè de měi yī gè wùzhǒng dōu yǒu qí nèizài jiàzhí, bù yīng jǐn yǐ duì rénlèi shìfǒu yǒuyòng lái héngliàng.', pt: 'A ética não-antropocêntrica defende que cada espécie da natureza tem valor intrínseco, não devendo ser avaliada apenas por sua utilidade para os seres humanos.' },
+      { zh: '建立人与自然和谐共生的新型关系，既需要制度层面的约束，更需要每个个体价值观念的根本转变。', py: 'Jiànlì rén yǔ zìrán héxié gòngshēng de xīnxíng guānxi, jì xūyào zhìdù céngmiàn de yuēshù, gèng xūyào měi gè gètǐ jiàzhíguānniàn de gēnběn zhuǎnbiàn.', pt: 'Estabelecer uma nova relação de coexistência harmoniosa entre o ser humano e a natureza requer não apenas restrições institucionais, mas também uma transformação fundamental nos valores de cada indivíduo.' },
+      { zh: '生态文明的构建，或许是人类文明史上最深刻的一次价值革命。', py: 'Shēngtài wénmíng de gòujiàn, huòxǔ shì rénlèi wénmíng shǐ shàng zuì shēnkè de yī cì jiàzhí gémìng.', pt: 'A construção de uma civilização ecológica pode ser a mais profunda revolução de valores na história da civilização humana.' },
+    ],
+  },
+  {
+    id: 'hsk6-dialogo-oriente-ocidente',
+    title: 'Oriente e Ocidente',
+    titleZh: '东西方对话',
+    level: 6,
+    lines: [
+      { zh: '东西方文明之间的对话与碰撞，构成了近现代世界历史最重要的主题之一。', py: 'Dōng xīfāng wénmíng zhī jiān de duìhuà yǔ pèngzhuàng, gòuchéng le jìn xiàndài shìjiè lìshǐ zuì zhòngyào de zhǔtí zhī yī.', pt: 'O diálogo e o confronto entre as civilizações oriental e ocidental formam um dos temas mais importantes da história do mundo moderno.' },
+      { zh: '启蒙运动时期，欧洲思想家从中国文化中汲取灵感，对儒家思想产生了浓厚的兴趣。', py: 'Qǐméng yùndòng shíqī, Ōuzhōu sīxiǎngjiā cóng Zhōngguó wénhuà zhōng jíqǔ línggǎn, duì Rújiā sīxiǎng chǎnshēng le nónghòu de xìngqù.', pt: 'Durante o Iluminismo, pensadores europeus buscaram inspiração na cultura chinesa e demonstraram grande interesse pelo confucionismo.' },
+      { zh: '近代以来，东方知识分子在向西方学习的同时，也在反思如何守护本土文化的根基。', py: 'Jìndài yǐlái, dōngfāng zhīshifènzǐ zài xiàng xīfāng xuéxí de tóngshí, yě zài fǎnsī rúhé shǒuhù běntǔ wénhuà de gēnjī.', pt: 'Na era moderna, os intelectuais orientais, ao aprender com o Ocidente, também refletiam sobre como preservar as raízes da cultura local.' },
+      { zh: '在全球化深度推进的今天，东西方文明互鉴已成为构建人类命运共同体的重要基础。', py: 'Zài quánqiúhuà shēndù tuījìn de jīntiān, dōng xīfāng wénmíng hù jiàn yǐ chéng wéi gòujiàn rénlèi mìngyùn gòngtóngtǐ de zhòngyào jīchǔ.', pt: 'Na era da globalização profunda, o aprendizado mútuo entre as civilizações oriental e ocidental tornou-se uma base importante para a construção de uma comunidade de destino compartilhado.' },
+      { zh: '真正平等的文明对话，需要双方都愿意以开放、谦逊的心态超越文化偏见，寻求共同的人类价值。', py: 'Zhēnzhèng píngděng de wénmíng duìhuà, xūyào shuāngfāng dōu yuànyì yǐ kāifàng, qiānxùn de xīntài chāoyuè wénhuà piānjiàn, xúnqiú gòngtóng de rénlèi jiàzhí.', pt: 'Um verdadeiro diálogo civilizacional igualitário exige que ambos os lados estejam dispostos a superar preconceitos culturais com abertura e humildade, em busca de valores humanos comuns.' },
+    ],
+  },
 ];

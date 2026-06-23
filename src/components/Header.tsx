@@ -14,11 +14,10 @@ export function Header() {
             Compêndio de <em>Hanzi</em>
           </h1>
           <p>
-            <b>Os 9.900 caracteres do conjunto completo</b>, ordenados por
-            frequência (rank #1 = mais usado), com pinyin, definição em
-            português e nível HSK.{' '}
-            <b>Dica:</b> os 5.000 primeiros já cobrem quase todo texto real; o
-            resto é cauda rara.
+            Dicionário visual de hanzi ordenados por frequência de uso real.
+            Filtre por nível HSK ou tom, busque por caractere, pinyin ou
+            significado — cada entrada traz pronúncia e tradução direta ao
+            português.
           </p>
         </div>
       </div>
