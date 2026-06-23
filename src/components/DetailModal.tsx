@@ -1,24 +1,15 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { HanziEntry } from '../types/hanzi';
-import { pyColored } from '../utils/pinyin';
 
 interface DetailModalProps {
   entry: HanziEntry | null;
-  toneColor: boolean;
   onClose: () => void;
 }
 
 const NO_DEF = '— sem glosa na base (caractere raro)';
 
-function Py({ p, toneColor }: { p: string; toneColor: boolean }) {
-  if (toneColor) {
-    return <span dangerouslySetInnerHTML={{ __html: pyColored(p) }} />;
-  }
-  return <>{p}</>;
-}
-
-export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
+export function DetailModal({ entry, onClose }: DetailModalProps) {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -59,15 +50,8 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
           </div>
           <div className="m-info">
             <span className="rank">#{entry.r}</span>
-            <div className="m-py">
-              <Py p={entry.p} toneColor={toneColor} />
-            </div>
-            {entry.pt ? (
-              <div className="m-mean">{entry.pt}</div>
-            ) : (
-              <div className="m-mean en">{entry.d || NO_DEF}</div>
-            )}
-            {entry.pt && entry.d && <div className="m-en">{entry.d}</div>}
+            <div className="m-py">{entry.p}</div>
+            <div className={`m-mean${entry.pt ? '' : ' en'}`}>{entry.pt || NO_DEF}</div>
             <div className="tags">
               {entry.h ? (
                 <span className="tag hsk">HSK {entry.h}</span>
@@ -87,9 +71,7 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
             {entry.w.map(([chars, py, gloss], i) => (
               <div className="m-w" key={i}>
                 <span className="m-wz">{chars}</span>
-                <span className="m-wp">
-                  <Py p={py} toneColor={toneColor} />
-                </span>
+                <span className="m-wp">{py}</span>
                 <span className="m-wg">{gloss}</span>
               </div>
             ))}
@@ -101,9 +83,7 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
             <div className="m-h">例句 · frase de exemplo</div>
             <div className="m-s">
               <div className="m-sz">{entry.sx[0]}</div>
-              <div className="m-sp">
-                <Py p={entry.sx[1]} toneColor={toneColor} />
-              </div>
+              <div className="m-sp">{entry.sx[1]}</div>
               <div className="m-st">{entry.sx[2]}</div>
             </div>
           </div>

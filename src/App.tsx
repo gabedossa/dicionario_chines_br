@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { Controls } from './components/Controls';
 import { CharacterGrid } from './components/CharacterGrid';
 import { DetailModal } from './components/DetailModal';
+import { ReadingModal } from './components/ReadingModal';
 import { Footer } from './components/Footer';
 import rawData from './data/hanzi.json';
 
@@ -13,17 +14,16 @@ const PAGE = 120;
 const DATA: HanziEntry[] = (rawData as HanziEntry[]).map((d) => ({
   ...d,
   _t: toneOf(d.p),
-  _s: `${strip(d.p)} ${(d.pt ?? d.d).toLowerCase()} ${d.c}`,
+  _s: `${strip(d.p)} ${(d.pt || d.d).toLowerCase()} ${d.c}`,
 }));
 
 export function App() {
   const [query, setQuery] = useState('');
   const [hsk, setHsk] = useState('all');
   const [tone, setTone] = useState('all');
-  const [ptOnly, setPtOnly] = useState(false);
-  const [toneColor, setToneColor] = useState(false);
   const [shown, setShown] = useState(PAGE);
   const [selected, setSelected] = useState<HanziEntry | null>(null);
+  const [readingOpen, setReadingOpen] = useState(false);
 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -45,11 +45,6 @@ export function App() {
     setShown(PAGE);
   }, []);
 
-  const handlePtOnly = useCallback(() => {
-    setPtOnly((p) => !p);
-    setShown(PAGE);
-  }, []);
-
   const handleClose = useCallback(() => setSelected(null), []);
 
   const filtered = useMemo(() => {
@@ -57,11 +52,10 @@ export function App() {
     return DATA.filter((d) => {
       if (hsk !== 'all' && d.h !== hsk) return false;
       if (tone !== 'all' && d._t !== +tone) return false;
-      if (ptOnly && !d.pt) return false;
       if (q && !d._s?.includes(q)) return false;
       return true;
     });
-  }, [query, hsk, tone, ptOnly]);
+  }, [query, hsk, tone]);
 
   return (
     <div className="wrap">
@@ -69,30 +63,28 @@ export function App() {
       <Controls
         hsk={hsk}
         tone={tone}
-        ptOnly={ptOnly}
-        toneColor={toneColor}
         shownCount={Math.min(shown, filtered.length)}
         totalCount={filtered.length}
         onQuery={handleQuery}
         onHsk={handleHsk}
         onTone={handleTone}
-        onPtOnly={handlePtOnly}
-        onToneColor={() => setToneColor((t) => !t)}
+        onReadingOpen={() => setReadingOpen(true)}
       />
       <main>
         <CharacterGrid
           entries={filtered}
           shown={shown}
-          toneColor={toneColor}
           onSelect={setSelected}
           onLoadMore={() => setShown((s) => s + PAGE)}
         />
         {selected && (
           <DetailModal
             entry={selected}
-            toneColor={toneColor}
             onClose={handleClose}
           />
+        )}
+        {readingOpen && (
+          <ReadingModal onClose={() => setReadingOpen(false)} />
         )}
       </main>
       <Footer />

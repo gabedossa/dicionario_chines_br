@@ -3,15 +3,12 @@ import { useState } from 'react';
 interface ControlsProps {
   hsk: string;
   tone: string;
-  ptOnly: boolean;
-  toneColor: boolean;
   shownCount: number;
   totalCount: number;
   onQuery: (v: string) => void;
   onHsk: (v: string) => void;
   onTone: (v: string) => void;
-  onPtOnly: () => void;
-  onToneColor: () => void;
+  onReadingOpen: () => void;
 }
 
 const HSK_LEVELS = ['all', '1', '2', '3', '4', '5', '6'] as const;
@@ -28,15 +25,12 @@ const TONE_LABELS: Record<string, string> = {
 export function Controls({
   hsk,
   tone,
-  ptOnly,
-  toneColor,
   shownCount,
   totalCount,
   onQuery,
   onHsk,
   onTone,
-  onPtOnly,
-  onToneColor,
+  onReadingOpen,
 }: ControlsProps) {
   const [inputValue, setInputValue] = useState('');
 
@@ -94,30 +88,14 @@ export function Controls({
         ))}
 
         <span className="divider" />
-        <button
-          type="button"
-          className="chip"
-          aria-pressed={ptOnly}
-          onClick={onPtOnly}
-        >
-          só com tradução PT
-        </button>
-        <button
-          type="button"
-          className="chip"
-          aria-pressed={toneColor}
-          onClick={onToneColor}
-        >
-          cores de tom
+        <button type="button" className="btn-reading" onClick={onReadingOpen}>
+          文 Textos
         </button>
       </div>
 
       <div className="statline">
         <span>
           Mostrando <b>{shownCount}</b> de {totalCount} resultados
-        </span>
-        <span>
-          <b>347</b> com tradução PT · <b>9.900</b> no total
         </span>
       </div>
     </div>

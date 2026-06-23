@@ -4,7 +4,6 @@ import { CharacterCard } from './CharacterCard';
 interface CharacterGridProps {
   entries: HanziEntry[];
   shown: number;
-  toneColor: boolean;
   onSelect: (entry: HanziEntry) => void;
   onLoadMore: () => void;
 }
@@ -12,7 +11,6 @@ interface CharacterGridProps {
 export function CharacterGrid({
   entries,
   shown,
-  toneColor,
   onSelect,
   onLoadMore,
 }: CharacterGridProps) {
@@ -28,12 +26,11 @@ export function CharacterGrid({
 
   return (
     <>
-      <div className={`grid${toneColor ? ' tones' : ''}`}>
+      <div className="grid">
         {slice.map((entry) => (
           <CharacterCard
             key={entry.r}
             entry={entry}
-            toneColor={toneColor}
             onClick={onSelect}
           />
         ))}

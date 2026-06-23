@@ -15,8 +15,8 @@ export function Header() {
           </h1>
           <p>
             <b>Os 9.900 caracteres do conjunto completo</b>, ordenados por
-            frequência (rank #1 = mais usado), com pinyin, definição e nível
-            HSK. Os 347 do núcleo <b>HSK 1 e 2</b> têm tradução em português.{' '}
+            frequência (rank #1 = mais usado), com pinyin, definição em
+            português e nível HSK.{' '}
             <b>Dica:</b> os 5.000 primeiros já cobrem quase todo texto real; o
             resto é cauda rara.
           </p>

@@ -1,19 +1,13 @@
 import { HanziEntry } from '../types/hanzi';
-import { pyColored } from '../utils/pinyin';
 
 interface CharacterCardProps {
   entry: HanziEntry;
-  toneColor: boolean;
   onClick: (entry: HanziEntry) => void;
 }
 
 const NO_DEF = '— sem glosa na base (caractere raro)';
 
-export function CharacterCard({ entry, toneColor, onClick }: CharacterCardProps) {
-  const py = toneColor
-    ? <span dangerouslySetInnerHTML={{ __html: pyColored(entry.p) }} />
-    : entry.p;
-
+export function CharacterCard({ entry, onClick }: CharacterCardProps) {
   return (
     <article className="card" onClick={() => onClick(entry)}>
       <span className="rank">#{entry.r}</span>
@@ -21,12 +15,8 @@ export function CharacterCard({ entry, toneColor, onClick }: CharacterCardProps)
         <i />
         <span className="hz">{entry.c}</span>
       </div>
-      <div className="py">{py}</div>
-      {entry.pt ? (
-        <div className="mean">{entry.pt}</div>
-      ) : (
-        <div className="mean en">{entry.d || NO_DEF}</div>
-      )}
+      <div className="py">{entry.p}</div>
+      <div className={`mean${entry.pt ? '' : ' en'}`}>{entry.pt || NO_DEF}</div>
       <div className="tags">
         {entry.h ? (
           <span className="tag hsk">HSK {entry.h}</span>
