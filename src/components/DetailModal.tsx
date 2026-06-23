@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { HanziEntry } from '../types/hanzi';
 import { pyColored } from '../utils/pinyin';
 
@@ -28,16 +29,26 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
 
   if (!entry) return null;
 
-  return (
+  return createPortal(
     <div
       className="ov open"
       aria-hidden="false"
       role="dialog"
       aria-modal="true"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
     >
       <div className="modal">
-        <button className="m-close" aria-label="Fechar" onClick={onClose}>
+        <button
+          type="button"
+          className="m-close"
+          aria-label="Fechar"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
+        >
           ×
         </button>
 
@@ -56,9 +67,7 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
             ) : (
               <div className="m-mean en">{entry.d || NO_DEF}</div>
             )}
-            {entry.pt && entry.d && (
-              <div className="m-en">{entry.d}</div>
-            )}
+            {entry.pt && entry.d && <div className="m-en">{entry.d}</div>}
             <div className="tags">
               {entry.h ? (
                 <span className="tag hsk">HSK {entry.h}</span>
@@ -106,6 +115,7 @@ export function DetailModal({ entry, toneColor, onClose }: DetailModalProps) {
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

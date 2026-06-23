@@ -50,6 +50,8 @@ export function App() {
     setShown(PAGE);
   }, []);
 
+  const handleClose = useCallback(() => setSelected(null), []);
+
   const filtered = useMemo(() => {
     const q = strip(query.trim());
     return DATA.filter((d) => {
@@ -65,7 +67,6 @@ export function App() {
     <div className="wrap">
       <Header />
       <Controls
-        query={query}
         hsk={hsk}
         tone={tone}
         ptOnly={ptOnly}
@@ -90,7 +91,7 @@ export function App() {
           <DetailModal
             entry={selected}
             toneColor={toneColor}
-            onClose={() => setSelected(null)}
+            onClose={handleClose}
           />
         )}
       </main>

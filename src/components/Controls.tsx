@@ -1,5 +1,6 @@
+import { useState } from 'react';
+
 interface ControlsProps {
-  query: string;
   hsk: string;
   tone: string;
   ptOnly: boolean;
@@ -25,7 +26,6 @@ const TONE_LABELS: Record<string, string> = {
 };
 
 export function Controls({
-  query,
   hsk,
   tone,
   ptOnly,
@@ -38,6 +38,13 @@ export function Controls({
   onPtOnly,
   onToneColor,
 }: ControlsProps) {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+    onQuery(e.target.value);
+  };
+
   return (
     <div className="controls">
       <div className="searchrow">
@@ -52,8 +59,8 @@ export function Controls({
             placeholder="Buscar por caractere, pinyin ou significado…"
             autoComplete="off"
             aria-label="Buscar"
-            value={query}
-            onChange={(e) => onQuery(e.target.value)}
+            value={inputValue}
+            onChange={handleChange}
           />
         </div>
       </div>
@@ -63,6 +70,7 @@ export function Controls({
         {HSK_LEVELS.map((level) => (
           <button
             key={level}
+            type="button"
             className="chip"
             aria-pressed={hsk === level}
             onClick={() => onHsk(level)}
@@ -76,6 +84,7 @@ export function Controls({
         {TONE_LEVELS.map((t) => (
           <button
             key={t}
+            type="button"
             className="chip"
             aria-pressed={tone === t}
             onClick={() => onTone(t)}
@@ -86,6 +95,7 @@ export function Controls({
 
         <span className="divider" />
         <button
+          type="button"
           className="chip"
           aria-pressed={ptOnly}
           onClick={onPtOnly}
@@ -93,6 +103,7 @@ export function Controls({
           só com tradução PT
         </button>
         <button
+          type="button"
           className="chip"
           aria-pressed={toneColor}
           onClick={onToneColor}

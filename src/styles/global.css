@@ -66,7 +66,7 @@ header{padding:54px 0 26px;border-bottom:1px solid var(--line)}
 .brand p b{color:var(--bone);font-weight:500}
 
 /* ============================== CONTROLES ============================== */
-.controls{position:sticky;top:0;z-index:5;background:linear-gradient(var(--ink),var(--ink) 78%,transparent);
+.controls{position:sticky;top:0;z-index:5;background:var(--ink);
   padding:16px 0 14px;margin-bottom:8px}
 .searchrow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .search{flex:1 1 280px;position:relative}
