@@ -160,11 +160,12 @@ footer b{color:var(--bone-dim);font-weight:500}
   background:rgba(8,6,4,.66);backdrop-filter:blur(3px)}
 .ov.open{display:flex}
 .modal{background:var(--ink-2);border:1px solid var(--line);border-top:3px solid var(--seal);
-  width:100%;max-width:560px;max-height:86vh;overflow:auto;border-radius:18px 18px 0 0;
-  padding:22px 22px 30px;position:relative}
+  width:100%;max-width:560px;max-height:86vh;border-radius:18px 18px 0 0;
+  position:relative;display:flex;flex-direction:column;overflow:hidden}
 @media(min-width:600px){.ov{align-items:center}.modal{border-radius:18px;border-top-width:1px;border-left:3px solid var(--seal)}}
+.modal-body{overflow-y:auto;padding:22px 22px 30px;flex:1}
 .m-close{position:absolute;top:12px;right:14px;background:none;border:none;color:var(--muted);
-  font-size:26px;line-height:1;cursor:pointer;padding:4px 8px}
+  font-size:26px;line-height:1;cursor:pointer;padding:4px 8px;z-index:1}
 .m-close:hover{color:var(--bone)}
 .m-top{display:flex;gap:18px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
 .m-cell{width:96px;height:96px;flex:0 0 auto;margin:0}
@@ -205,12 +206,14 @@ footer b{color:var(--bone-dim);font-weight:500}
 /* ===== modal de leitura ===== */
 .rd-modal{
   background:var(--ink-2);border:1px solid var(--line);border-top:3px solid var(--jade);
-  width:100%;max-width:680px;max-height:86vh;overflow:auto;
-  border-radius:18px 18px 0 0;padding:24px 24px 32px;position:relative;
+  width:100%;max-width:680px;max-height:86vh;
+  border-radius:18px 18px 0 0;position:relative;
+  display:flex;flex-direction:column;overflow:hidden;
 }
 @media(min-width:600px){
   .rd-modal{border-radius:18px;border-top-width:1px;border-left:3px solid var(--jade)}
 }
+.rd-modal-body{overflow-y:auto;padding:24px 24px 32px;flex:1}
 .rd-header{margin-bottom:22px}
 .rd-levels{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
 

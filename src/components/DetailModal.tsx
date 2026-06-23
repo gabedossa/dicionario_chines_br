@@ -43,6 +43,7 @@ export function DetailModal({ entry, onClose }: DetailModalProps) {
           ×
         </button>
 
+        <div className="modal-body">
         <div className="m-top">
           <div className="cell m-cell">
             <i />
@@ -94,6 +95,7 @@ export function DetailModal({ entry, onClose }: DetailModalProps) {
             Sem palavras de exemplo na base para este caractere (forma rara).
           </div>
         )}
+        </div>
       </div>
     </div>,
     document.body,

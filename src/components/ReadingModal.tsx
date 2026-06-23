@@ -45,6 +45,7 @@ export function ReadingModal({ onClose }: ReadingModalProps) {
           ×
         </button>
 
+        <div className="rd-modal-body">
         {text ? (
           <div className="rd-reader">
             <button
@@ -106,6 +107,7 @@ export function ReadingModal({ onClose }: ReadingModalProps) {
             </div>
           </>
         )}
+        </div>
       </div>
     </div>,
     document.body,
