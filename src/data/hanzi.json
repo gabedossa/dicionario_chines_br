@@ -3,25 +3,25 @@
     "r": 1,
     "c": "的",
     "p": "de",
-    "d": "partícula possessiva (de); adjetival",
+    "d": "Partícula possessiva (de); adjetival",
     "h": "1",
     "s": 8,
-    "pt": "partícula possessiva (de); adjetival",
+    "pt": "Partícula possessiva (de); adjetival",
     "w": [
       [
         "目的",
         "mù dì",
-        "purpose"
+        "Propósito"
       ],
       [
         "的话",
         "de huà",
-        "if"
+        "Se"
       ],
       [
         "似的",
         "shì de",
-        "seems as if"
+        "Como"
       ]
     ],
     "sx": [
@@ -42,17 +42,17 @@
       [
         "一些",
         "yī xiē",
-        "some"
+        "Alguns"
       ],
       [
         "一种",
         "yī zhǒng",
-        "one kind of"
+        "Uma espécie de"
       ],
       [
         "一般",
         "yì bān",
-        "same"
+        "Geralmente"
       ]
     ],
     "sx": [
@@ -73,17 +73,12 @@
       [
         "不是",
         "bú shì",
-        "fault"
-      ],
-      [
-        "不是",
-        "bú shì",
-        "no"
+        "Não"
       ],
       [
         "但是",
         "dàn shì",
-        "but"
+        "Mas"
       ]
     ],
     "sx": [
@@ -96,25 +91,20 @@
     "r": 4,
     "c": "不",
     "p": "bù",
-    "d": "não (negação)",
+    "d": "Não (negação)",
     "h": "1",
     "s": 4,
-    "pt": "não (negação)",
+    "pt": "Não (negação)",
     "w": [
       [
         "不是",
         "bú shì",
-        "fault"
-      ],
-      [
-        "不是",
-        "bú shì",
-        "no"
+        "Não é"
       ],
       [
         "不能",
         "bù néng",
-        "cannot"
+        "Não pode"
       ]
     ],
     "sx": [
@@ -127,25 +117,20 @@
     "r": 5,
     "c": "了",
     "p": "le",
-    "d": "partícula de ação concluída",
+    "d": "Partícula de ação concluída",
     "h": "1",
     "s": 2,
-    "pt": "partícula de ação concluída",
+    "pt": "Partícula de ação concluída",
     "w": [
       [
         "为了",
         "wèi le",
-        "in order to"
+        "para"
       ],
       [
         "了解",
         "liǎo jiě",
-        "to understand"
-      ],
-      [
-        "了解",
-        "liǎo jiě",
-        "to understand"
+        "Comreender"
       ]
     ],
     "sx": [
@@ -158,25 +143,25 @@
     "r": 6,
     "c": "在",
     "p": "zài",
-    "d": "estar (em); em",
+    "d": "Estar (em); em",
     "h": "1",
     "s": 6,
-    "pt": "estar (em); em",
+    "pt": "Estar (em); em",
     "w": [
       [
         "现在",
         "xiàn zài",
-        "now"
+        "Agora"
       ],
       [
         "存在",
         "cún zài",
-        "to exist"
+        "Existir"
       ],
       [
         "实在",
         "shí zài",
-        "really"
+        "Realmente"
       ]
     ],
     "sx": [
@@ -197,17 +182,17 @@
       [
         "人民",
         "rén mín",
-        "the people"
+        "As pessoas"
       ],
       [
         "人们",
         "rén men",
-        "people"
+        "Pessoas"
       ],
       [
         "人口",
         "rén kǒu",
-        "population"
+        "População"
       ]
     ],
     "sx": [
@@ -228,17 +213,17 @@
       [
         "没有",
         "méi yǒu",
-        "haven't"
+        "Não ter"
       ],
       [
         "具有",
         "jù yǒu",
-        "to have"
+        "Ter"
       ],
       [
         "有关",
         "yǒu guān",
-        "to have sth to do with"
+        "Relacionado"
       ]
     ],
     "sx": [
@@ -259,17 +244,17 @@
       [
         "我们",
         "wǒ men",
-        "we"
+        "Nós"
       ],
       [
         "我国",
         "wǒ guó",
-        "our country"
+        "Nosso país"
       ],
       [
         "自我",
         "zì wǒ",
-        "self-"
+        "Auto-"
       ]
     ],
     "sx": [
@@ -290,17 +275,17 @@
       [
         "他们",
         "tā men",
-        "they"
+        "Eles"
       ],
       [
         "其他",
         "qí tā",
-        "other"
+        "Outro"
       ],
       [
         "他人",
         "tā rén",
-        "another"
+        "Outra pessoa"
       ]
     ],
     "sx": [
@@ -321,17 +306,17 @@
       [
         "这个",
         "zhè ge",
-        "this"
+        "Esse"
       ],
       [
         "这样",
         "zhè yàng",
-        "this kind of"
+        "Então"
       ],
       [
         "这些",
         "zhè xiē",
-        "these"
+        "Esses"
       ]
     ],
     "sx": [
@@ -352,17 +337,17 @@
       [
         "这个",
         "zhè ge",
-        "this"
+        "Esse"
       ],
       [
         "那个",
         "nà ge",
-        "that one"
+        "Aquele"
       ],
       [
         "几个",
         "jǐ gè",
-        "a few"
+        "Um pouco, diversos"
       ]
     ],
     "sx": [
@@ -383,17 +368,17 @@
       [
         "我们",
         "wǒ men",
-        "we"
+        "nós"
       ],
       [
         "他们",
         "tā men",
-        "they"
+        "eles"
       ],
       [
         "人们",
         "rén men",
-        "people"
+        "pessoas"
       ]
     ],
     "sx": [
@@ -414,12 +399,12 @@
       [
         "其中",
         "qí zhōng",
-        "among"
+        "em"
       ],
       [
         "中心",
         "zhōng xīn",
-        "center"
+        "centro"
       ],
       [
         "中央",
@@ -445,17 +430,17 @@
       [
         "起来",
         "qǐ lái",
-        "to stand up"
+        "ficar de pé"
       ],
       [
         "起来",
         "qǐ lái",
-        "indicating the beginning and continuation of an action or…"
+        "Indica o inicio e a continuação de uma ação."
       ],
       [
         "出来",
         "chū lái",
-        "to come out"
+        "sair"
       ]
     ],
     "sx": [
@@ -476,17 +461,17 @@
       [
         "以上",
         "yǐ shàng",
-        "that level or higher"
+        "Aquele nivel ou superior, acima"
       ],
       [
         "上海",
         "shàng hǎi",
-        "Shanghai municipality, central east China, abbr. to…"
+        "Xangai"
       ],
       [
         "身上",
         "shēn shàng",
-        "on the body"
+        "No corpo"
       ]
     ],
     "sx": [
@@ -507,17 +492,17 @@
       [
         "大学",
         "dà xué",
-        "the Great Learning, one of the Four Books 四書|四书[Si4 shu1]…"
+        "O Grande Aprendizado, um dos Quatro Livros 四書|四书[Si4 shu1]…"
       ],
       [
         "大学",
         "dà xué",
-        "university"
+        "Universidade"
       ],
       [
         "大家",
         "dà jiā",
-        "everyone"
+        "Pessoal"
       ]
     ],
     "sx": [
@@ -538,17 +523,17 @@
       [
         "成为",
         "chéng wéi",
-        "to become"
+        "tornar-se"
       ],
       [
         "因为",
         "yīn wèi",
-        "because"
+        "porque"
       ],
       [
         "认为",
         "rèn wéi",
-        "to believe"
+        "acreditar"
       ]
     ],
     "sx": [
@@ -569,17 +554,17 @@
       [
         "和平",
         "hé píng",
-        "peace"
+        "paz"
       ],
       [
         "和尚",
         "hé shàng",
-        "Buddhist monk"
+        "monge budista"
       ],
       [
         "和谐",
         "hé xié",
-        "harmonious"
+        "harmonioso"
       ]
     ],
     "sx": [
@@ -600,12 +585,12 @@
       [
         "国家",
         "guó jiā",
-        "country"
+        "nação"
       ],
       [
         "全国",
         "quán guó",
-        "whole nation"
+        "todo o país"
       ],
       [
         "国际",
@@ -623,24 +608,24 @@
     "r": 21,
     "c": "地",
     "p": "dì",
-    "d": "terra, solo, solo; terra, região; partícula estrutural usada antes de um verbo",
+    "d": "terra, solo; região; partícula estrutural usada antes de um verbo",
     "h": "3",
     "s": 6,
     "w": [
       [
         "地方",
         "dì fāng",
-        "region"
+        "região"
       ],
       [
         "地方",
         "dì fāng",
-        "area"
+        "lugar"
       ],
       [
         "地区",
         "dì qū",
-        "local"
+        "área"
       ]
     ],
     "sx": [
@@ -662,17 +647,17 @@
       [
         "得到",
         "dé dào",
-        "to get"
+        "pegar"
       ],
       [
         "达到",
         "dá dào",
-        "to reach"
+        "alcançar"
       ],
       [
         "受到",
         "shòu dào",
-        "to receive"
+        "Receber"
       ]
     ],
     "sx": [
@@ -693,17 +678,17 @@
       [
         "可以",
         "kě yǐ",
-        "can"
+        "poder"
       ],
       [
         "以及",
         "yǐ jí",
-        "as well as"
+        "assim como"
       ],
       [
         "所以",
         "suǒ yǐ",
-        "therefore"
+        "Portanto"
       ]
     ],
     "sx": [
@@ -724,17 +709,17 @@
       [
         "说道",
         "shuō dào",
-        "to state"
+        "Por falar nisso"
       ],
       [
         "说道",
         "shuō dào",
-        "to discuss"
+        "Por falar nisso"
       ],
       [
         "来说",
         "lái shuō",
-        "to have one's say"
+        "Para ser honesto"
       ]
     ],
     "sx": [
