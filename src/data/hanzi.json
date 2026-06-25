@@ -740,17 +740,17 @@
       [
         "时间",
         "shí jiān",
-        "time"
+        "tempo"
       ],
       [
         "时候",
         "shí hòu",
-        "time"
+        "quando"
       ],
       [
         "同时",
         "tóng shí",
-        "at the same time"
+        "ao mesmo tempo"
       ]
     ],
     "sx": [
@@ -771,17 +771,17 @@
       [
         "主要",
         "zhǔ yào",
-        "main"
+        "principal"
       ],
       [
         "重要",
         "zhòng yào",
-        "important"
+        "importante"
       ],
       [
         "需要",
         "xū yào",
-        "to need"
+        "precisar"
       ]
     ],
     "sx": [
@@ -802,12 +802,12 @@
       [
         "就是",
         "jiù shì",
-        "precisely"
+        "aquilo é"
       ],
       [
         "就业",
         "jiù yè",
-        "looking for employment"
+        "Emprego"
       ],
       [
         "成就",
@@ -825,10 +825,10 @@
     "r": 28,
     "c": "出",
     "p": "chū",
-    "d": "sair; produzir",
+    "d": "fora",
     "h": "1",
     "s": 5,
-    "pt": "sair; produzir",
+    "pt": "fora",
     "w": [
       [
         "出来",
@@ -864,17 +864,17 @@
       [
         "社会",
         "shè huì",
-        "society"
+        "sociedade"
       ],
       [
         "会议",
         "huì yì",
-        "meeting"
+        "Reunião"
       ],
       [
         "不会",
         "bú huì",
-        "improbable"
+        "Não vai"
       ]
     ],
     "sx": [
@@ -895,17 +895,17 @@
       [
         "可以",
         "kě yǐ",
-        "can"
+        "Pode"
       ],
       [
         "可能",
         "kě néng",
-        "might"
+        "possível"
       ],
       [
         "可是",
         "kě shì",
-        "but"
+        "mas"
       ]
     ],
     "sx": [
@@ -926,17 +926,17 @@
       [
         "也许",
         "yě xǔ",
-        "perhaps"
+        "Talvez"
       ],
       [
         "再也",
         "zài yě",
-        "any more"
+        "Nunca mais"
       ],
       [
         "也罢",
         "yě bà",
-        "whether... or..."
+        "Que assim seja."
       ]
     ],
     "sx": [
@@ -957,12 +957,12 @@
       [
         "你们",
         "nǐ men",
-        "you"
+        "vocês"
       ],
       [
         "你好",
         "nǐ hǎo",
-        "Hello!"
+        "Olá!"
       ],
       [
         "迷你",
@@ -988,17 +988,17 @@
       [
         "对于",
         "duì yú",
-        "regarding"
+        "a respeito de"
       ],
       [
         "反对",
         "fǎn duì",
-        "to fight against"
+        "ser contrário a"
       ],
       [
         "相对",
         "xiāng duì",
-        "relatively"
+        "relativamente"
       ]
     ],
     "sx": [
@@ -1019,17 +1019,17 @@
       [
         "生产",
         "shēng chǎn",
-        "to produce"
+        "Produção"
       ],
       [
         "生活",
         "shēng huó",
-        "life"
+        "Vida"
       ],
       [
         "学生",
         "xué shēng",
-        "student"
+        "estudante"
       ]
     ],
     "sx": [
@@ -1050,17 +1050,17 @@
       [
         "不能",
         "bù néng",
-        "cannot"
+        "não pode"
       ],
       [
         "可能",
         "kě néng",
-        "might"
+        "possível"
       ],
       [
         "能力",
         "néng lì",
-        "capability"
+        "habilidade"
       ]
     ],
     "sx": [
@@ -1080,17 +1080,17 @@
       [
         "而且",
         "ér qiě",
-        "but also"
+        "e também"
       ],
       [
         "而是",
         "ér shì",
-        "rather"
+        "Em vez de"
       ],
       [
         "然而",
         "rán ér",
-        "however"
+        "No entanto"
       ]
     ],
     "sx": [
@@ -1112,17 +1112,17 @@
       [
         "孩子",
         "hái zi",
-        "child"
+        "criança"
       ],
       [
         "儿子",
         "ér zi",
-        "son"
+        "filho"
       ],
       [
         "电子",
         "diàn zi",
-        "electronic"
+        "electronico"
       ]
     ],
     "sx": [
@@ -1143,17 +1143,17 @@
       [
         "那么",
         "nà me",
-        "like that"
+        "tipo isso, então"
       ],
       [
         "那些",
         "nà xiē",
-        "those"
+        "aqueles"
       ],
       [
         "那个",
         "nà ge",
-        "that one"
+        "aquele"
       ]
     ],
     "sx": [
@@ -1174,17 +1174,17 @@
       [
         "得到",
         "dé dào",
-        "to get"
+        "pegar"
       ],
       [
         "获得",
         "huò dé",
-        "to obtain"
+        "obter"
       ],
       [
         "觉得",
         "jué de",
-        "to think"
+        "sentir"
       ]
     ],
     "sx": [
@@ -1204,17 +1204,17 @@
       [
         "由于",
         "yóu yú",
-        "due to"
+        "devido a"
       ],
       [
         "对于",
         "duì yú",
-        "regarding"
+        "a respeito de"
       ],
       [
         "位于",
         "wèi yú",
-        "to be located at"
+        "estar localizado em"
       ]
     ],
     "sx": [
@@ -1236,17 +1236,17 @@
       [
         "随着",
         "suí zhe",
-        "along with"
+        "juntamente com"
       ],
       [
         "接着",
         "jiē zhe",
-        "to catch and hold on"
+        "agarrar e segurar"
       ],
       [
         "有着",
         "yǒu zhe",
-        "to have"
+        "ter"
       ]
     ],
     "sx": [
@@ -1267,17 +1267,17 @@
       [
         "下来",
         "xià lái",
-        "to come down"
+        "descer"
       ],
       [
         "一下",
         "yī xià",
-        "give it a go"
+        "Experimente"
       ],
       [
         "下去",
         "xià qù",
-        "to go down"
+        "descer"
       ]
     ],
     "sx": [
@@ -1297,17 +1297,17 @@
       [
         "自己",
         "zì jǐ",
-        "oneself"
+        "si mesmo"
       ],
       [
         "自然",
         "zì rán",
-        "nature"
+        "natureza"
       ],
       [
         "自由",
         "zì yóu",
-        "freedom"
+        "liberdade"
       ]
     ],
     "sx": [
@@ -1328,17 +1328,17 @@
       [
         "之间",
         "zhī jiān",
-        "between"
+        "entre"
       ],
       [
         "之一",
         "zhī yī",
-        "one of"
+        "um dos"
       ],
       [
         "之后",
         "zhī hòu",
-        "afterwards"
+        "após"
       ]
     ],
     "sx": [
@@ -1360,17 +1360,17 @@
       [
         "年代",
         "nián dài",
-        "a decade of a century"
+        "Era"
       ],
       [
         "每年",
         "měi nián",
-        "every year"
+        "todos os anos"
       ],
       [
         "今年",
         "jīn nián",
-        "this year"
+        "esse ano"
       ]
     ],
     "sx": [
@@ -1391,7 +1391,7 @@
       [
         "通过",
         "tōng guò",
-        "by means of"
+        "por meio de"
       ],
       [
         "过程",
