@@ -7,6 +7,7 @@ import { CharacterGrid } from './components/CharacterGrid';
 import { DetailModal } from './components/DetailModal';
 import { ReadingModal } from './components/ReadingModal';
 import { Footer } from './components/Footer';
+import { AdBanner } from './components/AdBanner';
 import rawData from './data/hanzi.json';
 
 const PAGE = 120;
@@ -70,6 +71,7 @@ export function App() {
         onTone={handleTone}
         onReadingOpen={() => setReadingOpen(true)}
       />
+      <AdBanner slot="XXXXXXXXXX" format="horizontal" />
       <main>
         <CharacterGrid
           entries={filtered}
