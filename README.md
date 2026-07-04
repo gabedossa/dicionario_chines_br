@@ -18,8 +18,9 @@ Dicionário visual de caracteres chineses (hanzi) com tradução direta ao portu
 
 ## Tecnologias
 
-- [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vitejs.dev/)
+- [Next.js](https://nextjs.org/) (App Router, export estático) + [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) para código novo (o visual principal usa CSS customizado em `src/styles/global.css`)
+- [Google AdSense](https://www.google.com/adsense/) com banner de consentimento de cookies
 
 ## Como rodar
 
@@ -28,19 +29,27 @@ npm install
 npm run dev
 ```
 
-O app estará disponível em `http://localhost:5173`.
+O app estará disponível em `http://localhost:3000`.
 
 ## Build para produção
 
 ```bash
 npm run build
-npm run preview
 ```
+
+Gera um export estático na pasta `out/`, pronto para hospedagem em qualquer servidor estático.
 
 ## Estrutura do projeto
 
-```
+```text
 src/
+├── app/
+│   ├── layout.tsx        # Layout raiz: metadata, fontes, script do AdSense
+│   ├── page.tsx          # Página inicial (renderiza App.tsx)
+│   ├── globals.css       # Import do Tailwind + do CSS customizado
+│   └── privacidade/
+│       └── page.tsx      # Política de Privacidade
+├── App.tsx               # Componente principal (estado, filtros, layout da página)
 ├── components/
 │   ├── Header.tsx        # Cabeçalho com marca e descrição
 │   ├── Controls.tsx      # Barra de busca e filtros (HSK, tom, textos)
@@ -48,6 +57,8 @@ src/
 │   ├── CharacterCard.tsx # Card individual de cada hanzi
 │   ├── DetailModal.tsx   # Modal com detalhes do caractere
 │   ├── ReadingModal.tsx  # Modal com textos para leitura
+│   ├── AdBanner.tsx      # Slot de anúncio do Google AdSense
+│   ├── CookieConsent.tsx # Banner de consentimento de cookies
 │   └── Footer.tsx
 ├── data/
 │   ├── hanzi.json        # Base de dados dos caracteres
@@ -55,5 +66,9 @@ src/
 ├── types/
 │   └── hanzi.ts          # Interfaces TypeScript
 └── utils/
-    └── pinyin.ts         # Detecção de tom e normalização de pinyin
+    ├── pinyin.ts          # Detecção de tom e normalização de pinyin
+    └── consent.ts         # Estado de consentimento de cookies (localStorage)
+
+public/
+└── ads.txt               # Declaração de vendedor autorizado do AdSense
 ```
