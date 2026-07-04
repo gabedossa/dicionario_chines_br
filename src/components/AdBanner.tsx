@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 interface AdBannerProps {
   slot: string;
-  format?: 'auto' | 'horizontal' | 'rectangle';
+  format?: 'auto' | 'horizontal' | 'rectangle' | 'vertical';
 }
 
 // Substitua os dois placeholders abaixo após criar sua conta no Google AdSense:
