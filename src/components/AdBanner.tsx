@@ -1,4 +1,7 @@
-import { useEffect, useRef } from 'react';
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import { getConsent, onConsentChange, ConsentStatus } from '../utils/consent';
 
 interface AdBannerProps {
   slot: string;
@@ -12,14 +15,23 @@ const AD_CLIENT = 'ca-pub-3889679223756000';
 
 export function AdBanner({ slot, format = 'auto' }: AdBannerProps) {
   const pushed = useRef(false);
+  const [consent, setConsentState] = useState<ConsentStatus>(null);
 
   useEffect(() => {
-    if (pushed.current) return;
+    setConsentState(getConsent());
+    return onConsentChange(setConsentState);
+  }, []);
+
+  useEffect(() => {
+    if (consent !== 'granted' || pushed.current) return;
     pushed.current = true;
     try {
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
     } catch {}
-  }, []);
+  }, [consent]);
+
+  // Sem consentimento, não renderiza o slot: evita requisições e cookies de anúncio.
+  if (consent !== 'granted') return null;
 
   return (
     <div className="ad-wrap">

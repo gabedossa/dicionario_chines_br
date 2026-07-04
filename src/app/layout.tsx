@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import Script from 'next/script';
+import { CookieConsent } from '../components/CookieConsent';
+import { AdsenseLoader } from '../components/AdsenseLoader';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,13 +24,9 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        {/* Google AdSense: substitua ca-pub-XXXXXXXXXXXXXXXX pelo seu Publisher ID */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3889679223756000"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        <CookieConsent />
+        {/* Só carrega o script do AdSense depois que o usuário aceita cookies */}
+        <AdsenseLoader />
       </body>
     </html>
   );

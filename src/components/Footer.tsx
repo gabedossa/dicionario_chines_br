@@ -15,6 +15,11 @@ export function Footer() {
         A <b>cor de tom</b> segue a convenção de estudo: 1° âmbar · 2° jade ·
         3° azul · 4° vermelhão · neutro cinza.
       </p>
+      <p style={{ marginTop: 8 }}>
+        <a href="/privacidade" className="underline text-[var(--seal-bright)]">
+          Política de Privacidade
+        </a>
+      </p>
     </footer>
   );
 }

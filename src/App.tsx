@@ -61,60 +61,54 @@ export function App() {
   }, [query, hsk, tone]);
 
   return (
-    <>
-      <div className="page">
-        <aside className="ad-sidebar">
-          {/* Lateral esquerda — substitua o slot pelo Ad Unit ID do AdSense */}
-          <AdBanner slot="XXXXXXXXXX" format="vertical" />
-        </aside>
+    <div className="page">
+      <aside className="ad-sidebar">
+        {/* Lateral esquerda — substitua o slot pelo Ad Unit ID do AdSense */}
+        <AdBanner slot="XXXXXXXXXX" format="vertical" />
+      </aside>
 
-        <div className="wrap">
-          <Header />
-          <Controls
-            hsk={hsk}
-            tone={tone}
-            shownCount={Math.min(shown, filtered.length)}
-            totalCount={filtered.length}
-            onQuery={handleQuery}
-            onHsk={handleHsk}
-            onTone={handleTone}
-            onReadingOpen={() => setReadingOpen(true)}
+      <div className="wrap">
+        <Header />
+        <Controls
+          hsk={hsk}
+          tone={tone}
+          shownCount={Math.min(shown, filtered.length)}
+          totalCount={filtered.length}
+          onQuery={handleQuery}
+          onHsk={handleHsk}
+          onTone={handleTone}
+          onReadingOpen={() => setReadingOpen(true)}
+        />
+        <main>
+          <CharacterGrid
+            entries={filtered}
+            shown={shown}
+            onSelect={setSelected}
+            onLoadMore={() => setShown((s) => s + PAGE)}
           />
-          <main>
-            <CharacterGrid
-              entries={filtered}
-              shown={shown}
-              onSelect={setSelected}
-              onLoadMore={() => setShown((s) => s + PAGE)}
+          {selected && (
+            <DetailModal
+              entry={selected}
+              onClose={handleClose}
             />
-            {selected && (
-              <DetailModal
-                entry={selected}
-                onClose={handleClose}
-              />
-            )}
-            {readingOpen && (
-              <ReadingModal onClose={() => setReadingOpen(false)} />
-            )}
-          </main>
-          <div className="ad-footer-wrap">
-            {/* Rodapé — substitua o slot pelo Ad Unit ID do AdSense */}
-            <AdBanner slot="XXXXXXXXXX" format="horizontal" />
-          </div>
-          <Footer />
+          )}
+          {readingOpen && (
+            <ReadingModal onClose={() => setReadingOpen(false)} />
+          )}
+        </main>
+        <div className="ad-footer-wrap">
+          {/* Rodapé — substitua o slot pelo Ad Unit ID do AdSense */}
+          <AdBanner slot="XXXXXXXXXX" format="horizontal" />
         </div>
-
-        <aside className="ad-sidebar">
-          {/* Lateral direita — substitua o slot pelo Ad Unit ID do AdSense */}
-          <AdBanner slot="XXXXXXXXXX" format="vertical" />
-        </aside>
+        <Footer />
       </div>
 
-      {/* Banner fixo no rodapé — apenas mobile */}
-      <div className="ad-mobile-bottom">
-        {/* Mobile bottom — substitua o slot pelo Ad Unit ID do AdSense */}
-        <AdBanner slot="XXXXXXXXXX" format="auto" />
-      </div>
-    </>
+      <aside className="ad-sidebar">
+        {/* Lateral direita — substitua o slot pelo Ad Unit ID do AdSense */}
+        <AdBanner slot="XXXXXXXXXX" format="vertical" />
+      </aside>
+      {/* Anúncio fixo mobile: ative Anchor Ads (Auto ads) no painel do AdSense
+          em vez de um banner sticky customizado — é o formato aceito pela política. */}
+    </div>
   );
 }
