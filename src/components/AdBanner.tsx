@@ -23,7 +23,7 @@ export function AdBanner({ slot, format = 'auto' }: AdBannerProps) {
   }, []);
 
   useEffect(() => {
-    if (consent !== 'granted' || pushed.current) return;
+    if (process.env.NODE_ENV !== 'production' || consent !== 'granted' || pushed.current) return;
     pushed.current = true;
     try {
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
@@ -31,7 +31,8 @@ export function AdBanner({ slot, format = 'auto' }: AdBannerProps) {
   }, [consent]);
 
   // Sem consentimento, não renderiza o slot: evita requisições e cookies de anúncio.
-  if (consent !== 'granted') return null;
+  // Fora de produção, o script do AdSense nem é carregado (ver layout.tsx).
+  if (consent !== 'granted' || process.env.NODE_ENV !== 'production') return null;
 
   return (
     <div className="ad-wrap">

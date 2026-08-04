@@ -27,6 +27,7 @@ export function AudioButton({ text, label, className = '' }: AudioButtonProps) {
           stroke="currentColor"
           strokeWidth="1.6"
           strokeLinecap="round"
+          suppressHydrationWarning
         />
         <path
           d="M19 6a9 9 0 0 1 0 12"
@@ -34,6 +35,7 @@ export function AudioButton({ text, label, className = '' }: AudioButtonProps) {
           strokeWidth="1.6"
           strokeLinecap="round"
           opacity=".6"
+          suppressHydrationWarning
         />
       </svg>
     </button>
