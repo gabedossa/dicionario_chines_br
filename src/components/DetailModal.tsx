@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { HanziEntry } from '../types/hanzi';
+import { AudioButton } from './AudioButton';
 
 interface DetailModalProps {
   entry: HanziEntry | null;
@@ -51,6 +52,7 @@ export function DetailModal({ entry, onClose }: DetailModalProps) {
           </div>
           <div className="m-info">
             <span className="rank">#{entry.r}</span>
+            <AudioButton text={entry.c} label={entry.c} className="audio-btn-m-main" />
             <div className="m-py">{entry.p}</div>
             <div className={`m-mean${entry.pt ? '' : ' en'}`}>{entry.pt || NO_DEF}</div>
             <div className="tags">
@@ -71,6 +73,7 @@ export function DetailModal({ entry, onClose }: DetailModalProps) {
             <div className="m-h">词 · palavras</div>
             {entry.w.map(([chars, py, gloss], i) => (
               <div className="m-w" key={i}>
+                <AudioButton text={chars} label={chars} className="audio-btn-word" />
                 <span className="m-wz">{chars}</span>
                 <span className="m-wp">{py}</span>
                 <span className="m-wg">{gloss}</span>
@@ -83,7 +86,10 @@ export function DetailModal({ entry, onClose }: DetailModalProps) {
           <div className="m-sec">
             <div className="m-h">例句 · frase de exemplo</div>
             <div className="m-s">
-              <div className="m-sz">{entry.sx[0]}</div>
+              <div className="m-sz-row">
+                <div className="m-sz">{entry.sx[0]}</div>
+                <AudioButton text={entry.sx[0]} label={entry.sx[0]} className="audio-btn-sentence" />
+              </div>
               <div className="m-sp">{entry.sx[1]}</div>
               <div className="m-st">{entry.sx[2]}</div>
             </div>

@@ -145,6 +145,33 @@ header{padding:54px 0 26px;border-bottom:1px solid var(--line)}
 .tag.hsk{border-color:rgba(143,184,160,.4);color:var(--jade)}
 .tag.pt{border-color:rgba(200,69,46,.4);color:var(--seal-bright)}
 
+/* ===== botão de áudio (síntese de voz) ===== */
+.audio-btn{
+  display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;
+  background:transparent;border:1px solid var(--line);color:var(--seal-bright);
+  border-radius:8px;cursor:pointer;padding:0;transition:.15s;
+}
+.audio-btn svg{width:15px;height:15px}
+.audio-btn:hover{background:rgba(200,69,46,.12);border-color:var(--seal-bright);color:var(--bone)}
+.audio-btn:focus-visible{outline:2px solid var(--seal-bright);outline-offset:2px}
+
+.audio-btn-card{position:absolute;top:9px;left:9px;width:26px;height:26px;
+  background:rgba(20,17,14,.55);z-index:2}
+
+.audio-btn-m-main{position:absolute;top:0;right:0;width:32px;height:32px}
+.audio-btn-m-main svg{width:17px;height:17px}
+
+.audio-btn-word{width:22px;height:22px}
+.m-w{grid-template-columns:auto auto auto 1fr}
+
+.audio-btn-sentence{width:24px;height:24px}
+.m-sz-row{display:flex;align-items:center;gap:10px}
+
+.audio-btn-title{width:30px;height:30px;margin-left:auto}
+
+.audio-btn-line{width:22px;height:22px;flex-shrink:0}
+.rd-zh-row{display:flex;align-items:center;gap:8px}
+
 /* botão carregar mais */
 .more{display:block;margin:8px auto 60px;background:transparent;border:1px solid var(--gold);
   color:var(--gold);font-family:"Spline Sans Mono",monospace;font-size:13px;letter-spacing:.08em;

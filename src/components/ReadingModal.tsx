@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { TEXTS, ReadingText } from '../data/texts';
+import { AudioButton } from './AudioButton';
 
 interface ReadingModalProps {
   onClose: () => void;
@@ -60,12 +61,20 @@ export function ReadingModal({ onClose }: ReadingModalProps) {
               <span className="rd-title-zh">{text.titleZh}</span>
               <span className="rd-title-pt">{text.title}</span>
               <span className="tag hsk">HSK {text.level}</span>
+              <AudioButton
+                text={text.lines.map((l) => l.zh).join('')}
+                label={text.title}
+                className="audio-btn-title"
+              />
             </div>
 
             <div className="rd-body">
               {text.lines.map((line, i) => (
                 <div key={i} className="rd-line">
-                  <div className="rd-zh">{line.zh}</div>
+                  <div className="rd-zh-row">
+                    <div className="rd-zh">{line.zh}</div>
+                    <AudioButton text={line.zh} label={line.zh} className="audio-btn-line" />
+                  </div>
                   <div className="rd-py">{line.py}</div>
                   <div className="rd-pt">{line.pt}</div>
                 </div>

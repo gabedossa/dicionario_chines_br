@@ -1,4 +1,5 @@
 import { HanziEntry } from '../types/hanzi';
+import { AudioButton } from './AudioButton';
 
 interface CharacterCardProps {
   entry: HanziEntry;
@@ -11,6 +12,7 @@ export function CharacterCard({ entry, onClick }: CharacterCardProps) {
   return (
     <article className="card" onClick={() => onClick(entry)}>
       <span className="rank">#{entry.r}</span>
+      <AudioButton text={entry.c} label={entry.c} className="audio-btn-card" />
       <div className="cell">
         <i />
         <span className="hz">{entry.c}</span>
