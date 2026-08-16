@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 
+const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contato@seudominio.com.br';
+
 export const metadata: Metadata = {
   title: 'Política de Privacidade · 汉字大全',
+  description: 'Política de privacidade do 汉字大全 — Compêndio de Hanzi: cookies, Google AdSense, Google Fonts e contato.',
 };
 
 export default function PrivacyPage() {
@@ -70,8 +73,7 @@ export default function PrivacyPage() {
         </p>
 
         <h2 className="text-lg font-semibold text-[var(--bone)]">Contato</h2>
-        {/* Substitua pelo e-mail de contato real do site */}
-        <p>contato@seudominio.com.br</p>
+        <p>{CONTACT_EMAIL}</p>
 
         <h2 className="text-lg font-semibold text-[var(--bone)]">Alterações</h2>
         <p>

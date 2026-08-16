@@ -12,10 +12,3 @@ export interface HanziEntry {
   _s?: string;
 }
 
-export interface AppState {
-  q: string;
-  hsk: string;
-  tone: string;
-  ptOnly: boolean;
-  toneColor: boolean;
-}

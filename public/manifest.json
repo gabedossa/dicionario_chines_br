@@ -1,0 +1,18 @@
+{
+  "name": "汉字大全 — Compêndio de Hanzi",
+  "short_name": "汉字大全",
+  "description": "Dicionário visual de caracteres chineses com tradução ao português.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14110E",
+  "theme_color": "#14110E",
+  "lang": "pt-BR",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

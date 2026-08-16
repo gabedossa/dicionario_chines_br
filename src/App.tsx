@@ -13,6 +13,8 @@ import { AdBanner } from './components/AdBanner';
 import rawData from './data/hanzi.json';
 
 const PAGE = 120;
+const ADS_SLOT_VERTICAL = process.env.NEXT_PUBLIC_ADSENSE_SLOT_VERTICAL;
+const ADS_SLOT_HORIZONTAL = process.env.NEXT_PUBLIC_ADSENSE_SLOT_HORIZONTAL;
 
 const DATA: HanziEntry[] = (rawData as HanziEntry[]).map((d) => ({
   ...d,
@@ -63,8 +65,7 @@ export function App() {
   return (
     <div className="page">
       <aside className="ad-sidebar">
-        {/* Lateral esquerda — substitua o slot pelo Ad Unit ID do AdSense */}
-        <AdBanner slot="XXXXXXXXXX" format="vertical" />
+        <AdBanner slot={ADS_SLOT_VERTICAL} format="vertical" />
       </aside>
 
       <div className="wrap">
@@ -97,15 +98,13 @@ export function App() {
           )}
         </main>
         <div className="ad-footer-wrap">
-          {/* Rodapé — substitua o slot pelo Ad Unit ID do AdSense */}
-          <AdBanner slot="XXXXXXXXXX" format="horizontal" />
+          <AdBanner slot={ADS_SLOT_HORIZONTAL} format="horizontal" />
         </div>
         <Footer />
       </div>
 
       <aside className="ad-sidebar">
-        {/* Lateral direita — substitua o slot pelo Ad Unit ID do AdSense */}
-        <AdBanner slot="XXXXXXXXXX" format="vertical" />
+        <AdBanner slot={ADS_SLOT_VERTICAL} format="vertical" />
       </aside>
       {/* Anúncio fixo mobile: ative Anchor Ads (Auto ads) no painel do AdSense
           em vez de um banner sticky customizado — é o formato aceito pela política. */}

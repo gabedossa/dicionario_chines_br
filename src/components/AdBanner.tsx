@@ -4,14 +4,12 @@ import { useEffect, useRef, useState } from 'react';
 import { getConsent, onConsentChange, ConsentStatus } from '../utils/consent';
 
 interface AdBannerProps {
-  slot: string;
+  slot?: string;
   format?: 'auto' | 'horizontal' | 'rectangle' | 'vertical';
 }
 
-// Substitua os dois placeholders abaixo após criar sua conta no Google AdSense:
-// - data-ad-client: seu Publisher ID  (ca-pub-XXXXXXXXXXXXXXXX)
-// - slot: o Ad Unit ID de cada bloco (XXXXXXXXXX)
-const AD_CLIENT = 'ca-pub-3889679223756000';
+const AD_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-3889679223756000';
+const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED === 'true';
 
 export function AdBanner({ slot, format = 'auto' }: AdBannerProps) {
   const pushed = useRef(false);
@@ -23,16 +21,15 @@ export function AdBanner({ slot, format = 'auto' }: AdBannerProps) {
   }, []);
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production' || consent !== 'granted' || pushed.current) return;
+    if (!ADS_ENABLED || !slot || consent !== 'granted' || pushed.current) return;
     pushed.current = true;
     try {
       ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
     } catch {}
-  }, [consent]);
+  }, [consent, slot]);
 
-  // Sem consentimento, não renderiza o slot: evita requisições e cookies de anúncio.
-  // Fora de produção, o script do AdSense nem é carregado (ver layout.tsx).
-  if (consent !== 'granted' || process.env.NODE_ENV !== 'production') return null;
+  // Só renderiza o slot se anúncios estiverem habilitados, houver consentimento e um slot válido.
+  if (!ADS_ENABLED || !slot || consent !== 'granted') return null;
 
   return (
     <div className="ad-wrap">
